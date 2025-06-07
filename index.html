@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group animate-fade-in">
+                    <div class="input-field animate-slide-in">
+                        <input type="email" id="email" placeholder="Email" required class="animate-input">
+                    </div>
+                    <div class="input-field animate-slide-in">
+                        <input type="password" id="password" placeholder="Password" required class="animate-input">
+                    </div>
+                    <div class="checkbox animate-bounce">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit">Login</button>
+                </div>
+                <p class="register-link">Don't have an account? <a href="#" id="registerLink">Register here</a></p>
+            </form>
+
+            <form id="registerForm" style="display: none;">
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="text" id="regUsername" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="regEmail" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="regPassword" placeholder="Password" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit">Register</button>
+                </div>
+                <p class="login-link">Already have an account? <a href="#" id="loginLink">Login here</a></p>
+            </form>
+        </div>
+    </div>
+    <div id="message" class="message"></div>
+    <script src="script.js"></script>
+</body>
+</html> 

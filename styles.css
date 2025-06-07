@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-box h2 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3d4852;
+    position: relative;
+}
+
+.form-box h2::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #667eea;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    background: #f0f2f5;
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.input-field input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    font-size: 16px;
+}
+
+.input-field input::placeholder {
+    color: #999;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-field button {
+    flex-basis: 200px;
+    background: #667eea;
+    color: #fff;
+    height: 45px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-field button:hover {
+    background: #5a6fd9;
+}
+
+.register-link, .login-link {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.register-link a, .login-link a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.register-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    display: none;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.message.success {
+    background-color: #48bb78;
+    display: block;
+}
+
+.message.error {
+    background-color: #e53e3e;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .form-box {
+        padding: 30px 20px 40px;
+    }
+} 
